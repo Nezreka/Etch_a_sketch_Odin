@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+.square{
+    width: calc(100% / 17);
+    height: calc(100%/ 17);
+    background-color: black;
+}
+
+.gridContainer{
+    width: 100vh;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.square:hover{
+    opacity: 60%;
+    transition: .3s;
+}
