@@ -27,13 +27,11 @@ function buildGrid(){
         for(x = 0; x < gridSize; x++){
             var square = document.createElement("div");
             
-            console.log(newHeight)
             square.style.width = newWidth;
             square.style.height = newHeight;
             square.dataset.brightness = "1"
             square.className = "square"
             document.querySelector(".gridContainer").appendChild(square);
-            console.log("here")
         }
     }
     setSquareAttributes();
@@ -57,7 +55,6 @@ function setSquareAttributes(){
             }else{
                 var currentBrightness = ((square.dataset.brightness * 100) - 10)/100
                 square.dataset.brightness = currentBrightness;
-                console.log(currentBrightness)
                 square.style.filter = "brightness(" + currentBrightness + ")";
             }
         });
